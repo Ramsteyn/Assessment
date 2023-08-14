@@ -2,7 +2,7 @@ Prerequisites Before Running the Tests:
 
 1. Download the demo site and start it in the local server by completing the necessaries mentioned (https://github.com/cypress-io/cypress-realworld-app)
 2. User should install python3.10 or above and make sure the path of python install is updated in the Environment variables
-3. In commandPrompt/Terminal install the following commands
+3. In commandPrompt/Terminal execute the following commands to meet the requirements
     a. pip install selenium
     b. pip install pytest
     c. pip install allure-pytest
