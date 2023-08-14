@@ -18,7 +18,7 @@ Steps to Run the Tests
    b. allure generate Reports/allure-html --clean (Allure report Generation)
    c. Open the index.html file generated in the above step in any browser to see the reports
 
-Others test execution to try
+Other tests scripts to try
    1. py.test -m sanity --browser_name firefox --alluredir=Reports -v -s
    2. py.test -m E2E --browser_name chrome --alluredir=Reports -v -s
 
