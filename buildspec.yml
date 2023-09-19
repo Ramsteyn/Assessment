@@ -12,6 +12,9 @@ phases:
 
   build:
     commands:
+      -  export FIREFOX_BIN=$(which firefox)
+      - echo "Firefox Binary: $FIREFOX_BIN"
+        # Your build commands go here, and they can use the $FIREFOX_BIN variable
       - cd TestAssessment/tests
       - pytest -m smoke --browser_name firefox
       # Adjust the command to match your specific test configuration
