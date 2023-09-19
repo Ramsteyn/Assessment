@@ -1,0 +1,12 @@
+# Use an official Windows Server Core image
+FROM mcr.microsoft.com/windows/servercore:ltsc2019
+
+# Download and install Chocolatey (a package manager for Windows)
+RUN powershell -Command "Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))"
+
+# Install Firefox and Chrome using Chocolatey
+RUN powershell -Command "choco install firefox -y"
+RUN powershell -Command "choco install googlechrome -y"
+
+# Define an entry point (optional)
+# ENTRYPOINT ["powershell"]
