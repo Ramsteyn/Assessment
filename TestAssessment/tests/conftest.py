@@ -4,13 +4,45 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.firefox.service import Service as fs
 from selenium.webdriver.firefox.options import Options as fo
+import os
+import platform
 
 driver = None
 
 def pytest_addoption(parser):
     parser.addoption(
-        "--browser_name", action= "store", default ="chrome"
+        "--browser_name", action= "store", default ="firefox"
     )
+
+def get_os_info():
+    """
+    Get information about the current operating system.
+    Returns:
+        - OS name (e.g., "Windows", "Linux", "Darwin" for macOS)
+        - Binary paths for Chrome and Firefox (if available)
+    """
+    os_name = platform.system()
+
+    if os_name == "Windows":
+        # Binary paths for Chrome and Firefox on Windows
+        chrome_path = "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe"
+        firefox_path = "C:\\Program Files\\Mozilla Firefox\\firefox.exe"
+    elif os_name == "Linux":
+        # Binary paths for Chrome and Firefox on Linux
+        chrome_path = "/usr/bin/google-chrome"
+        firefox_path = "/usr/bin/firefox"
+    elif os_name == "Darwin":
+        # Binary paths for Chrome and Firefox on macOS
+        chrome_path = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+        firefox_path = "/Applications/Firefox.app/Contents/MacOS/firefox"
+    else:
+        chrome_path = "Unknown"
+        firefox_path = "Unknown"
+
+    return os_name, chrome_path, firefox_path
+
+# Example usage:
+os_name, chrome_path, firefox_path = get_os_info()
 
 @pytest.fixture(scope="class")
 def setup(request):
@@ -24,7 +56,7 @@ def setup(request):
 
     elif browser == "firefox":
         opFire = fo()
-        opFire.binary_location = r'C:\Program Files\Mozilla Firefox\firefox.exe'
+        opFire.binary_location = firefox_path
         ser_objfire = fs("TestAssessment/Drivers/geckodriver.exe")
         driver = webdriver.Firefox(service=ser_objfire, options=opFire)
 

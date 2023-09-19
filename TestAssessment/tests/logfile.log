@@ -128,3 +128,6 @@ Backtrace:
 2023-09-19 11:43:37,696 :INFO : test_e2e :Before Clicking the New User registration Button
 2023-09-19 11:43:38,145 :INFO : test_e2e :
 2023-09-19 11:43:38,467 :INFO : test_e2e :Entering the Bank Account credentials
+2023-09-19 22:32:28,352 :INFO : test_createpositive :Before Clicking the New User registration Button
+2023-09-19 22:32:28,853 :INFO : test_createpositive :Entering the Registration details
+2023-09-19 22:32:29,838 :INFO : test_createpositive :Clicking the Sign Up Button
