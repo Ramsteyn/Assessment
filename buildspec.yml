@@ -12,6 +12,7 @@ phases:
 
   build:
     commands:
+      - cd TestAssessment/tests
       - pytest -m smoke --browser_name firefox
       # Adjust the command to match your specific test configuration
 
