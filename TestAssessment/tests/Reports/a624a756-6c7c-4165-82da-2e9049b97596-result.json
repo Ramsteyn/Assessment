@@ -1,0 +1,1 @@
+{"name": "test_loginbadcred[credentials0]", "status": "skipped", "parameters": [{"name": "credentials", "value": "('00000', '\"Test\"')"}], "start": 1695143349573, "stop": 1695143349573, "uuid": "780d34ef-051f-4845-8801-5e31fe1794d1", "testCaseId": "cf76c7933c5a3e341386ee93cf551370", "fullName": "tests.test_user_login_bad_cred.TestLogin#test_loginbadcred"}
