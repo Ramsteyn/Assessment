@@ -22,6 +22,8 @@ Other tests scripts to try
    1. py.test -m sanity --browser_name firefox --alluredir=Reports -v -s
    2. py.test -m E2E --browser_name chrome --alluredir=Reports -v -s
 
+allure generate Reports -o Reports/allure-html/ --clean
+
 
 *** Limitations of Demo Site ***
 1. Make sure to delete the Generated Reports directory everytime before executing the tests (each commands mentioned in step 3)

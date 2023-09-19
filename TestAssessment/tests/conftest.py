@@ -24,6 +24,7 @@ def setup(request):
 
     elif browser == "firefox":
         opFire = fo()
+        opFire.binary_location = r'C:\Program Files\Mozilla Firefox\firefox.exe'
         ser_objfire = fs("TestAssessment/Drivers/geckodriver.exe")
         driver = webdriver.Firefox(service=ser_objfire, options=opFire)
 

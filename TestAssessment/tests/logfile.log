@@ -113,3 +113,18 @@ Backtrace:
 	RtlGetAppContainerNamedObjectPath [0x775C7B1E+286]
 	RtlGetAppContainerNamedObjectPath [0x775C7AEE+238]
 
+2023-09-19 11:40:20,686 :INFO : test_e2e :Before Clicking the New User registration Button
+2023-09-19 11:40:21,221 :INFO : test_e2e :Entering the Registration details
+2023-09-19 11:40:22,052 :INFO : test_e2e :Clicking the Sign Up Button
+2023-09-19 11:40:22,055 :INFO : test_e2e :Before Clicking the New User registration Button
+2023-09-19 11:40:22,576 :INFO : test_e2e :
+2023-09-19 11:40:22,855 :INFO : test_e2e :Entering the Bank Account credentials
+2023-09-19 11:40:23,847 :INFO : test_e2e :Clicking on the Done button and next button
+2023-09-19 11:40:24,432 :INFO : test_e2e :Verifying that added account is reflected in the Bank Accounts page
+2023-09-19 11:40:24,796 :INFO : test_e2e :Sending amount to the contact
+2023-09-19 11:43:36,325 :INFO : test_e2e :Before Clicking the New User registration Button
+2023-09-19 11:43:36,800 :INFO : test_e2e :Entering the Registration details
+2023-09-19 11:43:37,690 :INFO : test_e2e :Clicking the Sign Up Button
+2023-09-19 11:43:37,696 :INFO : test_e2e :Before Clicking the New User registration Button
+2023-09-19 11:43:38,145 :INFO : test_e2e :
+2023-09-19 11:43:38,467 :INFO : test_e2e :Entering the Bank Account credentials

@@ -1,0 +1,25 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.10
+    commands:
+      - pip install selenium
+      - pip install pytest
+      - pip install allure-pytest
+      # You can add more dependencies to install if needed
+
+  build:
+    commands:
+      - pytest -m smoke --browser_name firefox
+      # Adjust the command to match your specific test configuration
+
+  post_build:
+    commands:
+      - allure generate --clean -o Reports allure-results  # Generate Allure report
+
+artifacts:
+  files:
+    - Reports/**/*
+  # Include only the contents of the "reports" folder in the artifacts
