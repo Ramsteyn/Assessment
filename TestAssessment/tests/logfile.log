@@ -143,3 +143,61 @@ interaction.clickElement@chrome://remote/content/marionette/interaction.sys.mjs:
 clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:214:29
 receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:97:31
 
+2023-09-19 22:47:40,993 :INFO : test_createnegative :Before Clicking the New User registration Button
+2023-09-19 22:47:41,480 :INFO : test_createnegative :Entering the Registration details
+2023-09-19 22:47:42,047 :INFO : test_createnegative :Message: Element <span class="MuiButton-label"> is not clickable at point (960,602) because another element <form class="makeStyles-form-18"> obscures it
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+ElementClickInterceptedError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:331:5
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:162:11
+interaction.clickElement@chrome://remote/content/marionette/interaction.sys.mjs:121:11
+clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:214:29
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:97:31
+
+2023-09-19 22:48:02,196 :INFO : test_loginbadcred :Before Clicking the New User registration Button
+2023-09-19 22:48:02,838 :INFO : test_loginbadcred :
+2023-09-19 22:51:21,103 :INFO : test_e2e :Before Clicking the New User registration Button
+2023-09-19 22:51:21,690 :INFO : test_e2e :Entering the Registration details
+2023-09-19 22:51:22,583 :INFO : test_e2e :Clicking the Sign Up Button
+2023-09-19 22:51:22,591 :INFO : test_e2e :Before Clicking the New User registration Button
+2023-09-19 22:51:23,051 :INFO : test_e2e :
+2023-09-19 22:51:23,353 :INFO : test_e2e :Entering the Bank Account credentials
+2023-09-19 22:57:03,277 :INFO : test_createnegative :Before Clicking the New User registration Button
+2023-09-19 22:57:03,833 :INFO : test_createnegative :Entering the Registration details
+2023-09-19 22:57:04,524 :INFO : test_createnegative :Message: Element <span class="MuiButton-label"> is not clickable at point (960,602) because another element <form class="makeStyles-form-18"> obscures it
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+ElementClickInterceptedError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:331:5
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:162:11
+interaction.clickElement@chrome://remote/content/marionette/interaction.sys.mjs:121:11
+clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:214:29
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:97:31
+
+2023-09-19 22:57:25,792 :INFO : test_loginbadcred :Before Clicking the New User registration Button
+2023-09-19 22:57:26,467 :INFO : test_loginbadcred :
+2023-09-19 22:58:13,188 :INFO : test_e2e :Before Clicking the New User registration Button
+2023-09-19 22:58:13,796 :INFO : test_e2e :Entering the Registration details
+2023-09-19 22:58:15,318 :INFO : test_e2e :Clicking the Sign Up Button
+2023-09-19 22:58:15,323 :INFO : test_e2e :Before Clicking the New User registration Button
+2023-09-19 22:58:15,817 :INFO : test_e2e :
+2023-09-19 22:58:16,126 :INFO : test_e2e :Entering the Bank Account credentials
+2023-09-19 22:58:54,517 :INFO : test_e2e :Before Clicking the New User registration Button
+2023-09-19 22:58:55,041 :INFO : test_e2e :Entering the Registration details
+2023-09-19 22:58:55,940 :INFO : test_e2e :Clicking the Sign Up Button
+2023-09-19 22:58:55,945 :INFO : test_e2e :Before Clicking the New User registration Button
+2023-09-19 22:58:56,381 :INFO : test_e2e :
+2023-09-19 22:58:56,651 :INFO : test_e2e :Entering the Bank Account credentials
+2023-09-19 22:59:39,919 :INFO : test_e2e :Before Clicking the New User registration Button
+2023-09-19 22:59:40,452 :INFO : test_e2e :Entering the Registration details
+2023-09-19 22:59:41,257 :INFO : test_e2e :Clicking the Sign Up Button
+2023-09-19 22:59:41,261 :INFO : test_e2e :Before Clicking the New User registration Button
+2023-09-19 22:59:41,637 :INFO : test_e2e :
+2023-09-19 22:59:41,911 :INFO : test_e2e :Entering the Bank Account credentials
+2023-09-19 23:00:49,751 :INFO : test_e2e :Before Clicking the New User registration Button
+2023-09-19 23:00:50,269 :INFO : test_e2e :Entering the Registration details
+2023-09-19 23:00:51,165 :INFO : test_e2e :Clicking the Sign Up Button
+2023-09-19 23:00:51,169 :INFO : test_e2e :Before Clicking the New User registration Button
+2023-09-19 23:00:51,576 :INFO : test_e2e :
+2023-09-19 23:00:51,863 :INFO : test_e2e :Entering the Bank Account credentials

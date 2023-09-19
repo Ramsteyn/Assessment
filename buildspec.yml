@@ -9,6 +9,11 @@ phases:
       - pip install pytest
       - pip install allure-pytest
 
+  pre_build:
+    commands:
+      - powershell -command "(Get-Item 'C:\Program Files\Mozilla Firefox\firefox.exe').VersionInfo.FileVersion"
+
+
   build:
     commands:
       - cd TestAssessment/tests

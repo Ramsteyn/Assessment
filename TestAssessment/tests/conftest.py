@@ -1,3 +1,5 @@
+import logging
+
 import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
@@ -43,6 +45,7 @@ def get_os_info():
 
 # Example usage:
 os_name, chrome_path, firefox_path = get_os_info()
+print(os_name)
 
 @pytest.fixture(scope="class")
 def setup(request):
@@ -56,7 +59,6 @@ def setup(request):
 
     elif browser == "firefox":
         opFire = fo()
-        print(firefox_path)
         opFire.binary_location = firefox_path
         ser_objfire = fs("TestAssessment/Drivers/geckodriver.exe")
         driver = webdriver.Firefox(service=ser_objfire, options=opFire)
