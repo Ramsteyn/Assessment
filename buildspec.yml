@@ -9,14 +9,14 @@ phases:
       - pip install pytest
       - pip install allure-pytest
       # Download and install Chocolatey (a package manager for Windows)
-      #- powershell.exe -Command "Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))"
+      - powershell.exe -Command "Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))"
 
   pre_build:
     commands:
       # Install Chrome and Firefox using Chocolatey
       - powershell.exe -Command "choco install googlechrome -y"
-      - powershell.exe -Command "choco install firefox -y"
-      - powershell -command "(Get-Item 'C:\Program Files\Mozilla Firefox\firefox.exe').VersionInfo.FileVersion"
+      #- powershell.exe -Command "choco install firefox -y"
+      #- powershell -command "(Get-Item 'C:\Program Files\Mozilla Firefox\firefox.exe').VersionInfo.FileVersion"
 
 
 

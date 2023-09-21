@@ -53,6 +53,7 @@ def setup(request):
     browser = request.config.getoption("browser_name")
     if browser == "chrome":
         options = Options()
+        options.binary_location = chrome_path
         options.add_experimental_option('detach', True)
         ser_obj = Service("TestAssessment/Drivers/chromedriver.exe")
         driver = webdriver.Chrome(service=ser_obj, options=options)
