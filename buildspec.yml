@@ -9,6 +9,7 @@ phases:
       - pip install pytest
       - pip install allure-pytest
       - yum -y install sudo
+      - which sudo
       # Download and install Chocolatey (a package manager for Windows)
       #- powershell.exe -Command "Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))"
 
@@ -18,8 +19,8 @@ phases:
       #- powershell.exe -Command "choco install googlechrome -y"
       #- powershell.exe -Command "choco install firefox -y"
       #- powershell -command "(Get-Item 'C:\Program Files\Mozilla Firefox\firefox.exe').VersionInfo.FileVersion"
-      - apt-get update
-      - apt-get install -y firefox
+      - sudo apt-get update
+      - sudo apt-get install -y firefox
 
 
   build:
