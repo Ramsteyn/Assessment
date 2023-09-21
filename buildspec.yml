@@ -16,8 +16,6 @@ phases:
 
   build:
     commands:
-      # Build your custom Docker image that includes Chrome and Firefox
-      - docker build -t my-custom-image -f Dockerfile.chrome_firefox
       - cd TestAssessment/tests
       - pytest -m smoke --browser_name firefox
 
