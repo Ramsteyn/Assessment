@@ -18,9 +18,8 @@ phases:
       #- powershell.exe -Command "choco install googlechrome -y"
       #- powershell.exe -Command "choco install firefox -y"
       #- powershell -command "(Get-Item 'C:\Program Files\Mozilla Firefox\firefox.exe').VersionInfo.FileVersion"
-      - /usr/bin/sudo apt-get install apt
-      - /usr/bin/sudo apt-get update
-      - /usr/bin/sudo apt-get install -y firefox
+      - apt-get update
+      - apt-get install -y firefox
 
 
   build:
