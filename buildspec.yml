@@ -14,9 +14,11 @@ phases:
   pre_build:
     commands:
       # Install Chrome and Firefox using Chocolatey
-      - powershell.exe -Command "choco install googlechrome -y"
-      - powershell.exe -Command "choco install firefox -y"
-      - powershell -command "(Get-Item 'C:\Program Files\Mozilla Firefox\firefox.exe').VersionInfo.FileVersion"
+      #- powershell.exe -Command "choco install googlechrome -y"
+      #- powershell.exe -Command "choco install firefox -y"
+      #- powershell -command "(Get-Item 'C:\Program Files\Mozilla Firefox\firefox.exe').VersionInfo.FileVersion"
+      - sudo apt-get update
+      - sudo apt-get install -y firefox
 
 
   build:
