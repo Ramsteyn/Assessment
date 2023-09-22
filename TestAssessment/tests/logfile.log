@@ -201,3 +201,6 @@ receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild
 2023-09-19 23:00:51,169 :INFO : test_e2e :Before Clicking the New User registration Button
 2023-09-19 23:00:51,576 :INFO : test_e2e :
 2023-09-19 23:00:51,863 :INFO : test_e2e :Entering the Bank Account credentials
+2023-09-22 18:22:43,120 :INFO : test_e2e :Before Clicking the New User registration Button
+2023-09-22 18:24:16,537 :INFO : test_e2e :Before Clicking the New User registration Button
+2023-09-22 18:26:22,669 :INFO : test_e2e :Before Clicking the New User registration Button

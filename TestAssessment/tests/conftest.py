@@ -13,7 +13,7 @@ driver = None
 
 def pytest_addoption(parser):
     parser.addoption(
-        "--browser_name", action= "store", default ="firefox"
+        "--browser_name", action= "store", default ="chrome"
     )
 
 def get_os_info():
@@ -27,7 +27,7 @@ def get_os_info():
 
     if os_name == "Windows":
         # Binary paths for Chrome and Firefox on Windows
-        chrome_path = "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe"
+        chrome_path = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
         firefox_path = "C:\\Program Files\\Mozilla Firefox\\firefox.exe"
     elif os_name == "Linux":
         # Binary paths for Chrome and Firefox on Linux
@@ -53,19 +53,18 @@ def setup(request):
     browser = request.config.getoption("browser_name")
     if browser == "chrome":
         options = Options()
-        #options.binary_location = chrome_path
         options.add_experimental_option('detach', True)
-        ser_obj = Service("TestAssessment/Drivers/chromedriver.exe")
+        ser_obj = Service("../Drivers/chromedriver.exe")
         driver = webdriver.Chrome(service=ser_obj, options=options)
 
     elif browser == "firefox":
         opFire = fo()
         opFire.binary_location = firefox_path
-        ser_objfire = fs("TestAssessment/Drivers/geckodriver.exe")
+        ser_objfire = fs("../Drivers/geckodriver.exe")
         driver = webdriver.Firefox(service=ser_objfire, options=opFire)
 
     driver.implicitly_wait(5)
-    driver.get("http://localhost:3000/signin")
+    driver.get("http://www.amazon.com")
     driver.maximize_window()
 
         # To pass the driver
