@@ -212,3 +212,5 @@ receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild
 2023-09-22 19:25:43,265 :INFO : test_loginbadcred :Before Clicking the New User registration Button
 2023-09-22 19:58:44,859 :INFO : test_createnegative :Before Clicking the New User registration Button
 2023-09-22 19:58:55,154 :INFO : test_loginbadcred :Before Clicking the New User registration Button
+2023-09-22 20:12:30,244 :INFO : test_createnegative :Before Clicking the New User registration Button
+2023-09-22 20:12:40,504 :INFO : test_loginbadcred :Before Clicking the New User registration Button

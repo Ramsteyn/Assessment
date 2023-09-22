@@ -27,7 +27,7 @@ def get_os_info():
 
     if os_name == "Windows":
         # Binary paths for Chrome and Firefox on Windows
-        chrome_path = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+        chrome_path = "C:\Program Files\Google\Chrome\Application\chrome.exe"
         firefox_path = "C:\\Program Files\\Mozilla Firefox\\firefox.exe"
     elif os_name == "Linux":
         # Binary paths for Chrome and Firefox on Linux
@@ -53,6 +53,7 @@ def setup(request):
     browser = request.config.getoption("browser_name")
     if browser == "chrome":
         options = Options()
+        options.binary_location = chrome_path
         options.headless = True
         options.add_experimental_option('detach', True)
         ser_obj = Service("../Drivers/chromedriver.exe")
