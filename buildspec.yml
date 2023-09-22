@@ -15,7 +15,7 @@ phases:
     commands:
       # Install Chrome and Firefox using Chocolatey
       - powershell.exe -Command "choco install googlechrome -y"
-      - powershell -Command "$chromePath = Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\chrome.exe' | Select-Object -ExpandProperty '(Default)'; Write-Host 'Chrome is installed at: ' + $chromePath"
+      #- powershell -Command "$chromePath = Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\chrome.exe' | Select-Object -ExpandProperty '(Default)'; Write-Host 'Chrome is installed at: ' + $chromePath"
       #- powershell.exe -Command "choco install firefox -y"
       #- powershell -command "(Get-Item 'C:\Program Files\Mozilla Firefox\firefox.exe').VersionInfo.FileVersion"
 
