@@ -1,10 +1,9 @@
 import pytest
 
-from TestAssessment.Utilities.BaseClass import baseClass
-from TestAssessment.Utilities.ListFunctions import *
-from TestAssessment.Utilities.LoginPageElements import LoginPageElements
-from TestAssessment.Utilities.NewAccountsPageElements import NewAccountsPageElements
-
+from assessment.TestAssessment.Utilities.BaseClass import baseClass
+from assessment.TestAssessment.Utilities.ListFunctions import GettingPositiveNewUserCredentials
+from assessment.TestAssessment.Utilities.LoginPageElements import LoginPageElements
+from assessment.TestAssessment.Utilities.NewAccountsPageElements import NewAccountsPageElements
 
 """
                                         Verify user is able to Create an account with all positive inputs

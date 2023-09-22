@@ -1,7 +1,8 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
-from TestAssessment.Utilities.ListFunctions import *
 from selenium.webdriver.support.wait import WebDriverWait
+
+from assessment.TestAssessment.Utilities.ListFunctions import Truncating
 
 """
                             Elements of Transaction Page

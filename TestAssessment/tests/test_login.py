@@ -1,11 +1,9 @@
 import pytest
 
-from TestAssessment.Utilities.BaseClass import baseClass
-from TestAssessment.Utilities.ListFunctions import *
-from TestAssessment.Utilities.LoginPageElements import LoginPageElements
-
-
-
+from assessment.TestAssessment.Utilities.BaseClass import baseClass
+from assessment.TestAssessment.Utilities.ListFunctions import GettingPositiveNewUserCredentials, \
+    GettingBankAccountDetails
+from assessment.TestAssessment.Utilities.LoginPageElements import LoginPageElements
 
 """
                  Verfiy that User is able to Sign IN and Logout without issue

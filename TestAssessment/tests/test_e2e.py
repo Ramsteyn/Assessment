@@ -2,13 +2,14 @@ import time
 
 import pytest
 
-from TestAssessment.Utilities.BankAccountsPage import MyAccountPage
-from TestAssessment.Utilities.BaseClass import baseClass
-from TestAssessment.Utilities.CreateTrasactionPage import CreateTransaction
-from TestAssessment.Utilities.HomePageElements import HomePage
-from TestAssessment.Utilities.ListFunctions import *
-from TestAssessment.Utilities.LoginPageElements import LoginPageElements
-from TestAssessment.Utilities.NewAccountsPageElements import NewAccountsPageElements
+from assessment.TestAssessment.Utilities.BaseClass import baseClass
+from assessment.TestAssessment.Utilities.CreateTrasactionPage import CreateTransaction
+from assessment.TestAssessment.Utilities.HomePageElements import HomePage
+from assessment.TestAssessment.Utilities.ListFunctions import GettingCredentialsForE2E, GettingBankAccountDetails, \
+    GettingAmountToSend
+from assessment.TestAssessment.Utilities.LoginPageElements import LoginPageElements
+from assessment.TestAssessment.Utilities.MyAccountPage import MyAccountPage
+from assessment.TestAssessment.Utilities.NewAccountsPageElements import NewAccountsPageElements
 
 """
                  Verify that first time login in and account adding
