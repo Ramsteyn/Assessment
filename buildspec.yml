@@ -27,6 +27,7 @@ phases:
   build:
     commands:
       #- docker --version
+      - "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe" https://www.amazon.com
       - cd TestAssessment/tests
       - pytest -m smoke --browser_name chrome
 
