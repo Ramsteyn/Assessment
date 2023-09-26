@@ -55,7 +55,7 @@ def setup(request):
         options = Options()
         options.binary_location = chrome_path
         options.headless = True
-        options.add_argument('--no-sandbox')
+        #options.add_argument('--no-sandbox')
         options.add_experimental_option("useAutomationExtension", False)
         options.add_argument("--start-maximized")
         options.add_experimental_option('detach', True)
