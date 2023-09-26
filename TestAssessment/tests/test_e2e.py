@@ -29,10 +29,6 @@ amount = GettingAmountToSend(val2)
 class TestLogin(baseClass):
 
     @pytest.mark.E2E
-    @pytest.mark.parametrize("firstname", "lastname", "password", "username", "bankName", "routingNumb", "accountNumb","amount", [
-        ('Ram', 'Mani', 'Testing123', 'Ramsteyn', 'SBI', '12345678', '1234567', '$100'),
-        ('Ram', 'Mani', 'Testing123', 'Ramsteyn', 'SBI', '12345678', '1234567', '$100')
-                             ])
     def test_e2e(self, setup, credentials):
         # Initialing Log files to generate during the TC execution
         log = self.getLogger()
